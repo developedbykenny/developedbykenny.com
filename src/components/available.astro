@@ -1,5 +1,44 @@
 ---
 const { className } = Astro.props;
+
+const availability = {
+	available: {
+		color: 'text-green-600',
+		statuses: [
+			'Actively looking for new projects',
+			'Accepting new clients',
+			'Freelance slots open',
+			'Open to collaborations',
+		],
+	},
+	limited: {
+		color: 'text-yellow-500',
+		statuses: [
+			'Limited availability',
+			'Booking for [Month]',
+			'Next availability: [Date]',
+			'Waitlist only',
+			'Project queue full',
+			'Beta client applications open',
+			'Trial period availability',
+			'Discovery calls only',
+			'Accepting inquiries, not projects',
+			'Open to the right opportunity',
+			'Exploring interesting collaborations',
+			'Available for consulting or strategy only',
+			'Mentorship or speaking gigs only',
+		],
+	},
+	unavailable: {
+		color: 'text-red-500',
+		statuses: [
+			'Currently unavailable',
+			'Booked out until [Date]',
+			'Not accepting new clients',
+			'Heads down on existing projects',
+		],
+	},
+};
 ---
 
 <div class={`flex items-center gap-2 ${className}`}>
@@ -9,5 +48,5 @@ const { className } = Astro.props;
 		></span>
 		<span class="relative inline-flex size-2 rounded-full bg-green-300"></span>
 	</span>
-	<p class="text-zinc-300">Available For Work</p>
+	<p class="text-zinc-300">Accepting new clients</p>
 </div>
