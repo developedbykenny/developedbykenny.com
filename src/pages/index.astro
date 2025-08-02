@@ -1,15 +1,17 @@
 ---
-import H1 from "../components/h1.astro";
-import Link from "../components/link.astro";
-import Navigation from "../components/navigation";
-import RootLayout from "../layouts/RootLayout.astro";
-import WarpBackground from "../components/warp-background";
-import AvailableForWork from "../components/available.astro";
+import H1 from '../components/h1.astro';
+import Link from '../components/link.astro';
+import Navigation from '../components/navigation';
+import RootLayout from '../layouts/RootLayout.astro';
+import WarpBackground from '../components/warp-background';
+import AvailableForWork from '../components/available.astro';
 ---
 
 <RootLayout>
 	<main>
-		<div class="group relative w-full min-h-dvh flex items-center justify-center">
+		<div
+			class="group relative w-full min-h-dvh flex items-center justify-center"
+		>
 			<div class="absolute w-full h-dvh -z-10">
 				<WarpBackground
 					color1="#09090b"
@@ -23,9 +25,26 @@ import AvailableForWork from "../components/available.astro";
 				/>
 			</div>
 
-			<div class="p-4 sm:p-8 absolute w-full h-dvh flex flex-col justify-between z-10">
-				<div>
-					<H1 size="large"> Nikola <br /> Tesla </H1>
+			<div
+				class="p-4 sm:p-8 absolute w-full h-dvh flex flex-col justify-between z-10"
+			>
+				<div class="font-asset-container">
+					<H1
+						size="default"
+						className="flex flex-col opacity-90"
+					>
+						<span
+							class="dark-title text-3xl md:text-5xl translate-x-1"
+							data-text="Developed by"
+						>
+							Developed by
+						</span>
+						<span
+							class="title stagger-2 text-7xl md:text-9xl tracking-wide"
+							data-text="Kenny Nguyen"
+							>Kenny Nguyen</span
+						>
+					</H1>
 				</div>
 
 				<div>
@@ -33,13 +52,29 @@ import AvailableForWork from "../components/available.astro";
 					<div class="mb-2 sm:mb-4 flex items-center justify-between">
 						<div class="flex items-center gap-4">
 							<Link href="#">Book a call</Link>
-							<Link href="/projects" variant="secondary">View recent work</Link>
+							<Link
+								href="/projects"
+								variant="secondary"
+								>View recent work</Link
+							>
 						</div>
 
 						<Navigation client:load>
-							<Link href="/blog" variant="secondary">Blog</Link>
-							<Link href="/about" variant="secondary">About</Link>
-							<Link href="/contact" variant="secondary">Contact</Link>
+							<Link
+								href="/blog"
+								variant="secondary"
+								>Blog</Link
+							>
+							<Link
+								href="/about"
+								variant="secondary"
+								>About</Link
+							>
+							<Link
+								href="/contact"
+								variant="secondary"
+								>Contact</Link
+							>
 						</Navigation>
 					</div>
 				</div>
