@@ -2,32 +2,35 @@
 import { Image } from 'astro:assets';
 import H1 from '../components/h1.astro';
 import InfoLayout from '../layouts/InfoLayout.astro';
-import ACGenerator from '../assets/ac-generator.jpg';
-import FluidPropulsion from '../assets/fluid-propulsion.jpg';
-import ElectricMotor from '../assets/electro-magnetic-motor.jpg';
+import BeigeByKat from '../assets/portfolio/beigebykat.png';
+import BlkOwned from '../assets/portfolio/blkowned.png';
+import CitizensAndThieves from '../assets/portfolio/citizensandthieves.png';
 import Elevate from '../assets/portfolio/Elevate.png';
+import HendersonHomeImprovements from '../assets/portfolio/henderson.png';
+import ImpactWebStudio from '../assets/portfolio/impactwebstudio.png';
 import OakridgeRenovations from '../assets/portfolio/OakridgeRenovations.png';
 import PremierRenovations from '../assets/portfolio/PremierRenovations.png';
+import WorksiteLeads from '../assets/portfolio/worksiteleads.png';
 
 const projects = [
 	{
 		title: 'Impact Web Studio',
 		description:
 			'A web agency focused on providing web solutions for service providers.',
-		image: ACGenerator,
+		image: ImpactWebStudio,
 		href: 'https://impactwebstudio.ca',
 	},
 	{
 		title: 'Worksite Leads',
 		description:
 			'Digital web agency helping home service business get more lead, operate more efficiently & make more money. Full Website Designs. Lead Generation & Follow-up Automations.',
-		image: FluidPropulsion,
+		image: WorksiteLeads,
 		href: 'https://worksiteleads.com',
 	},
 	{
 		title: 'Beige By Kat',
 		description: 'Hair Studio Salon based in Toronto, Canada',
-		image: ElectricMotor,
+		image: BeigeByKat,
 		href: 'https://beigebykat.com',
 	},
 	{
@@ -54,21 +57,21 @@ const projects = [
 		title: 'BLK OWNED',
 		description:
 			"BLK OWNED is dedicated to advocating, educating, and marketing for the success of Southwestern Ontario's vibrant Black Business community.",
-		image: ElectricMotor,
+		image: BlkOwned,
 		href: 'https://blkowned.ca',
 	},
 	{
 		title: 'Citizens & Thieves',
 		description:
 			'A Steal Masta game where strategy meets chaos in a battle of wits and luck.',
-		image: ElectricMotor,
+		image: CitizensAndThieves,
 		href: 'https://citizensandthieves.com',
 	},
 	{
 		title: 'Henderson Home Improvements',
 		description:
 			'General contractor offering painting, drywalling, flooring, and basement, bathrooms, and kitchen finishes in the GTA, Canada.',
-		image: ElectricMotor,
+		image: HendersonHomeImprovements,
 		href: 'https://hendersonhomeimprovements.ca',
 	},
 ];
@@ -93,12 +96,13 @@ const projects = [
 								alt={project.title}
 								class="aspect-[3/2] object-center object-contain rounded-lg shadow-lg mb-4 sm:mb-0 sm:mr-4 group-hover:scale-110 transition duration-300 ease-in-out"
 							/>
-							<div class="p-1 sm:p-2">
+							<div class="">
 								<h2 class="text-base text-zinc-100">{project.title}</h2>
 								<p class="text-sm text-zinc-400 text-balance">
 									{project.description}
 								</p>
 							</div>
+							<span class="text-sm text-blue-300">Visit Website</span>
 						</a>
 					</li>
 				))

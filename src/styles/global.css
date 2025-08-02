@@ -1,10 +1,6 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
-@theme inline {
-	--font-sans: var(--font-geist);
-}
-
 /* Staggered version for second line */
 .stagger-2 {
 	animation: coupled-glitch-ghost-2 8s infinite;
