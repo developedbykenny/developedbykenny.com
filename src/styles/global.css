@@ -380,3 +380,42 @@
 		transform: translate(4px, 0);
 	}
 }
+
+.spiderverse-logo {
+	text-align: center;
+	font-family: 'Bebas Neue', Impact, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	background: transparent;
+}
+
+.title {
+	font-size: 5rem;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+	color: black;
+	position: relative;
+	display: inline-block;
+	transform: rotateX(0.5deg) rotateY(0.5deg); /* slight tilt */
+
+	/* Red and cyan offset layers */
+	text-shadow:
+		-2px 0 red,
+		2px 0 cyan,
+		0 2px black,
+		0 4px rgba(0, 0, 0, 0.4);
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 2px;
+	margin-top: -0.5em;
+	position: relative;
+	display: inline-block;
+	text-shadow:
+		-1px 0 red,
+		1px 0 cyan,
+		0 1px black;
+}
