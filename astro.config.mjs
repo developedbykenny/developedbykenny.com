@@ -4,11 +4,12 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 
-import vercel from '@astrojs/vercel';
+import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-	output: 'server',
+	output: 'static',
+
 	vite: {
 		plugins: [tailwindcss()],
 	},
@@ -26,5 +27,5 @@ export default defineConfig({
 		],
 	},
 
-	adapter: vercel(),
+	adapter: netlify(),
 });
