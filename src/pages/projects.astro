@@ -1,43 +1,82 @@
 ---
 import { Image } from 'astro:assets';
-import H1 from "../components/h1.astro";
-import InfoLayout from "../layouts/InfoLayout.astro";
-import ACGenerator from "../assets/ac-generator.jpg";
-import FluidPropulsion from "../assets/fluid-propulsion.jpg";
-import ElectricMotor from "../assets/electro-magnetic-motor.jpg";
+import H1 from '../components/h1.astro';
+import InfoLayout from '../layouts/InfoLayout.astro';
+import ACGenerator from '../assets/ac-generator.jpg';
+import FluidPropulsion from '../assets/fluid-propulsion.jpg';
+import ElectricMotor from '../assets/electro-magnetic-motor.jpg';
 
 const projects = [
-     {
-          title: "AC Generator",
-          description: "Transform mechanical energy into alternating current, powering the modern electric grid",
-          image: ACGenerator
-     },
-     {
-          title: "Fluid Propulsion",
-          description: "Bladeless turbine using fluid dynamics for efficient, low-friction propulsion.",
-          image: FluidPropulsion
-     },
-     {
-          title: "Electro-Magnetic Motor",
-          description: "Harness alternating current to produce smooth, efficient rotary motion.",
-          image: ElectricMotor
-     }];
+	{
+		title: 'Impact Web Studio',
+		description:
+			'A web agency focused on providing web solutions for service providers.',
+		image: ACGenerator,
+		href: 'https://impactwebstudio.ca',
+	},
+	{
+		title: 'Worksite Leads',
+		description:
+			'Digital web agency helping home service business get more lead, operate more efficiently & make more money. Full Website Designs. Lead Generation & Follow-up Automations.',
+		image: FluidPropulsion,
+		href: 'https://worksiteleads.com',
+	},
+	{
+		title: 'Beige By Kat',
+		description: 'Hair Studio Salon based in Toronto, Canada',
+		image: ElectricMotor,
+		href: 'https://beigebykat.com',
+	},
+	{
+		title: 'BLK OWNED',
+		description:
+			"BLK OWNED is dedicated to advocating, educating, and marketing for the success of Southwestern Ontario's vibrant Black Business community.",
+		image: ElectricMotor,
+		href: 'https://blkowned.ca',
+	},
+	{
+		title: 'Citizens & Thieves',
+		description:
+			'A Steal Masta game where strategy meets chaos in a battle of wits and luck.',
+		image: ElectricMotor,
+		href: 'https://citizensandthieves.com',
+	},
+	{
+		title: 'Henderson Home Improvements',
+		description:
+			'General contractor offering painting, drywalling, flooring, and basement, bathrooms, and kitchen finishes in the GTA, Canada.',
+		image: ElectricMotor,
+		href: 'https://hendersonhomeimprovements.ca',
+	},
+];
 ---
 
 <InfoLayout>
-     <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
-          <H1> Projects </H1>
+	<div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+		<H1> Projects </H1>
 
-          <ul class="mt-4 sm:mt-12 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 sm:gap-8">
-               {projects.map((project) => (
-                    <li>
-                         <Image src={project.image} alt={project.title} class="aspect-[1/1.33] object-center object-cover rounded-lg shadow-lg mb-4 sm:mb-0 sm:mr-4" />
-                         <div class="p-1 sm:p-2">
-                              <h2 class="text-base text-zinc-100">{project.title}</h2>
-                              <p class="text-sm text-zinc-400 text-balance">{project.description}</p>
-                         </div>
-                    </li>
-               ))}
-          </ul>
-     </div>
+		<ul
+			class="mt-4 sm:mt-12 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 sm:gap-8"
+		>
+			{
+				projects.map((project) => (
+					<li>
+						<a href={project.href}>
+							<Image
+								src={project.image}
+								alt={project.title}
+								class="aspect-[1/1.33] object-center object-cover rounded-lg shadow-lg mb-4 sm:mb-0 sm:mr-4"
+							/>
+							<div class="p-1 sm:p-2">
+								<h2 class="text-base text-zinc-100">{project.title}</h2>
+								<p class="text-sm text-zinc-400 text-balance">
+									{project.description}
+								</p>
+							</div>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
 </InfoLayout>
