@@ -7,7 +7,7 @@ export default function Navigation({
 }: {
 	children: React.ReactNode;
 }) {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<div className="flex items-center justify-center gap-12">
