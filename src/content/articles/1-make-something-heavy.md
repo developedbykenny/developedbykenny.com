@@ -1,5 +1,5 @@
 ---
-isDraft: true
+isDraft: false
 title: Think in Systems, Build in Public
 snippet: Show me your system, and I'll show you your future.
 slug: think-in-systems-build-in-public
