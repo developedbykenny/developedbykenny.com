@@ -8,15 +8,15 @@ category: Lessons & Frameworks
 tags: Systems Thinking, Mental Models, Founder Notes, Workflow Philosophy
 readingDuration: 1
 pubDate: 2025 8 3
-coverAlt: Women Holding Things - Maira Kalman, 2022.
-cover: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Facc54571-c711-44a0-a529-a501d8565466_680x878.jpeg
+coverAlt: Think Outside the Box - Art and Design Inspiration.
+cover: https://artanddesigninspiration.com/wp-content/uploads/2014/03/think-outside-the-box.jpg
 ---
 
 # Think in Systems, Build in Public
 
-> **“Every system is perfectly designed to get the results it gets.”** — W. Edwards Deming
+> **Every system is perfectly designed to get the results it gets.”** — W. Edwards Deming
 
-![Women Holding Things - Maira Kalman, 2022.](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Facc54571-c711-44a0-a529-a501d8565466_680x878.jpeg)
+![Think Outside the Box - Art and Design Inspiration](https://artanddesigninspiration.com/wp-content/uploads/2014/03/think-outside-the-box.jpg)
 
 The internet doesn't need another screenshot of a dashboard.
 
