@@ -4,7 +4,7 @@ title: Think in Systems, Build in Public
 snippet: Show me your system, and I'll show you your future.
 slug: think-in-systems-build-in-public
 author: Kenny Nguyen
-category: Lessons & Frameworks
+category: Systems
 tags: Systems Thinking, Mental Models, Founder Notes, Workflow Philosophy
 readingDuration: 1
 pubDate: 2025 8 3
